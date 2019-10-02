@@ -1,0 +1,31 @@
+//Program created to calculate monthly loan payment
+//Created by : Sarah Irdina - 02/10/2019
+
+#include<iostream>
+using namespace std;
+
+void displaystar()
+{
+	cout << "****************************\n";
+}
+
+void main()
+{
+	double t_interest, loan, rate, total, monthly;
+	int years;
+
+	cout << "Program For Calculating Monthly Loan Payment\n";
+	cout << "Input loan amount (RM): ";
+	cin >> loan;
+	cout << "Input annual interest rate(%): ";
+	cin >> rate;
+	cout << "Input number of years: ";
+	cin >> years;
+
+	t_interest = loan*rate / 100 * years;
+	total = loan + t_interest;
+	monthly = total / 120;
+
+	cout << "Monthly payment for this loan is(RM): " << monthly << endl;
+  void displaystar();
+}
